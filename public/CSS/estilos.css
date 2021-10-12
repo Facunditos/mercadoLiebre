@@ -1,0 +1,339 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+#main-header {
+    position: fixed;
+    width: 100%;
+    z-index: 45;
+    background-color: hsl(50, 82%, 53%);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    
+    
+    
+}
+#main-header-top-bar {
+    width: 100%;
+    display:flex;
+ 
+    flex-direction: column;
+    
+    align-items:center;
+    margin-bottom: 10px;
+}
+#main-header-top-bar-sin-cuotas {
+     display:flex;
+     margin-bottom: 10px;
+     justify-content: space-between;
+     width: 66%;
+     align-items: center;
+}
+#logo {
+   max-width: 50%;
+}
+#search-lupa {
+    max-width: 50%;
+    display: flex;
+    max-height: 40px;
+    justify-content: space-between;
+}
+#search {
+  width: 80%;
+}
+#lupa{
+    background-color:#ebebeb;
+    width: 20%;
+    
+    /* padding: 10px 0px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.fa-search {
+    color: blue;
+    
+}
+#cuotas {
+    text-align: center;
+  
+}
+#main-header-bottom-bar{
+    display: none;
+}
+li a{
+    text-decoration:none;
+    color: #666;
+    display: inline-block;
+    padding: 5px 0px;
+    
+}
+ul{
+    list-style:none ;
+    padding: 0px;
+}
+#tarjeta,#ingreso,#bolso {
+    display: inline;
+    margin-left: 2px;
+}
+
+#menuHamburger {
+    background-color:#03264C;
+    color: white;
+    padding: 20px;
+    display:block;
+    width: 50px;
+    text-align: center;  
+    margin: auto; 
+}
+
+main {
+    width: 90%;
+    margin-left:5%;
+    margin-right: 5%;
+    z-index: 1220;
+}
+.titulos {
+    font-size: 24px;
+   padding: 10px 0px 30px;
+    
+}
+
+.ofertas,.visitas {
+    display: flex;
+ 
+    justify-content: space-between;
+}
+article {
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: white;
+    max-width: 100%;
+
+    
+}
+
+img {
+    width: 100%;
+}
+.caracteristicasProducto {
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+    position: relative;
+   
+}
+.preciosDescuentos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+.precios{
+    font-size: 18px;
+   
+    flex-grow: 0.3;
+   
+}
+
+.descuentos{
+    font-size: 16px;
+    color: #39b54a;
+ 
+    
+    flex-grow: 0.7;
+}
+
+
+.fa-truck {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    color: #39b54a;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 23px;
+    right: 0px;
+    transition: all 1.5s;
+
+}
+.fa-truck:hover {
+    transform:rotate(-90deg);
+    color: red;
+
+}
+
+.descripciones {
+    font-size: 16px;
+    color: #666;
+    display: none;
+    transition: all 2s;
+}
+
+.descripciones:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+   
+}
+.caracteristicasProducto:hover .descripciones {
+    display: initial;
+     ;
+
+}
+footer{
+    text-align: center;
+    
+}
+
+.fa-credit-card,.fa-gift,.fa-user-shield {
+    font-size: 2em;
+    color: #1259c3;
+    margin-bottom: 10px;
+}
+
+.elementosFooter {
+    margin-bottom: 55px;
+}
+
+
+
+
+.create-form {
+    padding: 10px 0px;
+}
+.control-formulario {
+    margin-bottom: 10px;
+}
+.control-formulario label {
+    margin-bottom: 3px;
+    display: block;
+    font-style: italic;
+} 
+.control {
+    width: 100%;
+    padding: 10px 2px;
+}
+
+button {
+    padding: 10px;
+    background-color: #39b54a;
+    color: white;
+    border-radius: 45px;
+    border: none;
+}
+@media (min-width:361px ) {
+ 
+    .ofertas,.visitas {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        max-width: 45%;
+
+    }
+    
+    
+
+
+    
+}
+
+@media (min-width:768px ) {
+    #main-header-top-bar {
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #search {
+        width: 75%;
+      }
+    #lupa{
+          background-color:#ebebeb;
+          width: 20%;
+         
+
+      }
+   /*  #cuotas {
+        max-width: 350px;
+        text-align: right;
+        
+    } */
+    #menuHamburger {
+        display: none;
+    }
+    #main-header-bottom-bar {
+        display: flex;
+      
+        justify-content: space-between;
+        width: 100%;
+    }
+    #main-header-bottom-bar ul {
+        display: flex;
+    }
+
+    #left-navbar {
+        
+        flex-grow: 0.3;
+        display: flex;
+        justify-content: space-between;
+       
+    }
+    #right-navbar {
+      
+        flex-grow: 0.3;
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+  
+  
+/*     .ofertas,.visitas {
+        display: flex;
+    } */
+
+
+    
+}
+
+@media (min-width:1200px ) {
+    #main-header-top-bar,#main-header-bottom-bar {
+        
+        max-width: 1200px;
+        margin: auto;
+        align-items: center;
+    }
+    #cuotas {
+        max-width: none
+        
+    }
+   /*  .ofertas,.visitas {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    } */
+    article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        /* max-width: 24% ; */
+
+    }
+}
