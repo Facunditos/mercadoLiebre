@@ -3,7 +3,7 @@ let express=require('express')
 const path=require('path')
 let app=express()
 const publicPath=path.resolve(__dirname,'./public')
-app.listen(3782,()=>console.log('esto fue exitoso'))
+/* app.listen(3782,()=>console.log('esto fue exitoso')) */
 app.use(express.static(publicPath))
 app.get('/',(req,res)=>res.sendFile(path.join( __dirname,'./views/home.html')))
 app.get('/register',(req,res)=>res.sendFile(path.join( __dirname,'./views/register.html')))

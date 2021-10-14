@@ -7,63 +7,48 @@ body {
     font-size: 12px;
     font-family: 'Roboto', sans-serif;
     background-color: #ebebeb;
+   
 }
 
 #main-header {
-    position: fixed;
-    width: 100%;
-    z-index: 45;
+    
     background-color: hsl(50, 82%, 53%);
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
+    padding: 20px;    
+}
+#main-header-top-bar-restringido {
+    
+    display:flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: flex-end;
-    
-    
-    
-}
-#main-header-top-bar {
-    width: 100%;
-    display:flex;
- 
-    flex-direction: column;
-    
-    align-items:center;
+    text-align:end;
     margin-bottom: 10px;
 }
-#main-header-top-bar-sin-cuotas {
-     display:flex;
-     margin-bottom: 10px;
-     justify-content: space-between;
-     width: 66%;
-     align-items: center;
-}
+
 #logo {
-   max-width: 50%;
+   width: 120px;
+   
 }
 #search-lupa {
-    max-width: 50%;
+    
     display: flex;
-    max-height: 40px;
-    justify-content: space-between;
+    position: relative;
+    
+    width: 80px;
+    height:32px;
+    
 }
 #search {
-  width: 80%;
+    width: 80px;
+    height:32px;
+    border-radius: 4px;
 }
-#lupa{
-    background-color:#ebebeb;
-    width: 20%;
-    
-    /* padding: 10px 0px; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+
 .fa-search {
-    color: blue;
+    
+    position: absolute;
+    right: 2px;
+    align-self: center;
+    font-size: 100%;
     
 }
 #cuotas {
@@ -103,7 +88,7 @@ main {
     width: 90%;
     margin-left:5%;
     margin-right: 5%;
-    z-index: 1220;
+    
 }
 .titulos {
     font-size: 24px;
@@ -113,16 +98,14 @@ main {
 
 .ofertas,.visitas {
     display: flex;
- 
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 article {
     margin-bottom: 10px;
     text-align: center;
     background-color: white;
     max-width: 100%;
-
-    
 }
 
 img {
@@ -197,6 +180,8 @@ img {
 }
 footer{
     text-align: center;
+    background-color: white;
+    padding-top: 10px;
     
 }
 
@@ -236,13 +221,20 @@ button {
     border-radius: 45px;
     border: none;
 }
-@media (min-width:361px ) {
- 
-    .ofertas,.visitas {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
+
+.perfil {
+    display: flex;
+    align-items: center;
+}
+.opciones {
+    margin-left: 40px;
+}
+
+.opcionesVamos {
+    margin-left: 40px;
+}
+@media (min-width:360px ) {
+
     article {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
         max-width: 45%;
@@ -257,80 +249,52 @@ button {
 
 @media (min-width:768px ) {
     #main-header-top-bar {
-        
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-    }
-    #search {
-        width: 75%;
-      }
-    #lupa{
-          background-color:#ebebeb;
-          width: 20%;
-         
-
-      }
-   /*  #cuotas {
-        max-width: 350px;
-        text-align: right;
-        
-    } */
-    #menuHamburger {
-        display: none;
-    }
-    #main-header-bottom-bar {
-        display: flex;
-      
-        justify-content: space-between;
-        width: 100%;
-    }
-    #main-header-bottom-bar ul {
-        display: flex;
-    }
-
-    #left-navbar {
-        
-        flex-grow: 0.3;
-        display: flex;
-        justify-content: space-between;
-       
-    }
-    #right-navbar {
-      
-        flex-grow: 0.3;
-        display: flex;
-        justify-content: space-between;
-    }
-
-
-  
-  
-/*     .ofertas,.visitas {
-        display: flex;
-    } */
-
-
     
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+        
+    }
+    #main-header-top-bar-restringido {
+        
+        flex-grow: 0.66;
+        align-self: flex-end;
+
+    }
+ 
+    #main-header-bottom-bar{
+        display: flex;
+        justify-content: space-between;
+
+    }
+    .left-navbar{
+        display: flex;
+
+        
+    }
+    .right-navbar{
+        display: flex;
+
+        
+    }
+    li {
+        padding: 10px;
+    }
+    
+    #menuHamburger {
+        display: none; 
+    }
+    article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        max-width: 22%;
+
+    }
 }
 
 @media (min-width:1200px ) {
-    #main-header-top-bar,#main-header-bottom-bar {
-        
-        max-width: 1200px;
-        margin: auto;
-        align-items: center;
-    }
-    #cuotas {
-        max-width: none
-        
-    }
-   /*  .ofertas,.visitas {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    } */
+
     article {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
         /* max-width: 24% ; */

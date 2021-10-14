@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<!--     <meta name="viewport" content="width=device-width, initial-scale=1.0">
- -->    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link href="CSS/estilos.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     rel="stylesheet" />
@@ -13,27 +13,29 @@
 <body>
     <header id="main-header">
         <div id="main-header-top-bar">
-            <div id="main-header-top-bar-sin-cuotas">  
-                <img src="images/logo-mercado-liebre.svg" id="logo">
+            <div id="main-header-top-bar-restringido">   
+                <div id="logo">
+                    <img src="images/logo-mercado-liebre.svg" >
+                </div>
                 <div id="search-lupa">    
                     <form action="resultadosBusqueda" method="POST">
                         <input type="text" id="search">
-                    </form>
-                    <div id="lupa">
-                        <i class="fas fa-search"></i>
-                    </div>
+                    </form> 
+                    <i class="fas fa-search"></i>  
                 </div>
-            </div>     
-            <p id="cuotas"><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas  sin tarjeta de crédito</p>
+            </div> 
+            <div id="cuotas">
+                <p><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
+            </div>
         </div> 
         <nav id="main-header-bottom-bar" >
-            <ul id="left-navbar">
+            <ul class="left-navbar">
                 <li><a href="">Ofertas</a></li>
                 <li><a href="">Tiendas Oficiales</a></li>
                 <li><a href="">Vender</a></li>
                 <li><a href="">Ayuda</a></li>
             </ul>
-            <ul id="right-navbar">
+            <ul class="right-navbar">
                 <li><a href="./register">Creá tu cuenta<div id="tarjeta"><i class="far fa-address-card"></i></div></a></li>
                 <li><a href="./login">Ingresa<div id="ingreso"><i class="fas fa-sign-in-alt"></i></div></a></li>
                 <li><a href="">Mis compras<div id="bolso"><i class="fas fa-shopping-basket"></i></div></a></li>
